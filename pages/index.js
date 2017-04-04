@@ -1,6 +1,7 @@
 import stylesheet from 'styles/index.scss'
 import Head from 'next/head'
 import Card from 'components/Home/Card'
+import SideBarRelatedPost from 'components/Home/RelatedPost'
 
 export default () => (
 	<div>
@@ -14,10 +15,9 @@ export default () => (
 			<section className="section">
 				<div className="container">
 					<div className="columns">
-						
 
-						<div className="column is-two-thirds is-hidden-touch">
-
+						<div className="column is-two-thirds">
+							
 							<div className="columns is-half wrapping">
 
 								<Card />
@@ -26,27 +26,19 @@ export default () => (
 								<Card />
 
 							</div>
-						</div>
-						<div className="column is-two-thirds is-hidden-desktop">
-							
-							<div className="rowCard">
-								
-								<Card />
 
+						</div>
+
+						<div className="column sidebar-home">
+							<div className="related-container">
+								<h1>Sidebar</h1>
+								<SideBarRelatedPost />
+								<SideBarRelatedPost />
+								<SideBarRelatedPost />
+								<SideBarRelatedPost />
 							</div>
-
-							<div className="rowCard">
-								
-								<Card />
-
-							</div>
-
 						</div>
 
-						<div className="column">
-							<h1>Sidebar</h1>
-							<hr />
-						</div>
 					</div>
 				</div>
 			</section>

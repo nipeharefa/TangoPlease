@@ -11,13 +11,33 @@ div.rowCard {
 	flex-direction: row;
 
 	.nusa {
-		width: calc(100% / 2);
+		
+		@include touch() {
+			width: calc(100% / 1) !important;
+		};
+		@include widescreen() {
+			width: calc(100% / 3) !important;
+		};
+
+		@include desktop() {
+			width: calc(100% / 2) !important;
+		};
+
+		width: calc(100% / 1);
 
 		.card {
 			margin-bottom: 1rem;
 			margin-right: 1rem;
 		}
 
+	}
+	small.timestamp-post {
+		font-size: 0.7rem;
+		color: #555;
+	}
+	span.more-span {
+		color: #555;
+		font-size: 0.8rem;
 	}
 }
 
@@ -46,7 +66,17 @@ div.rowCard {
 		opacity: 0;
 		align-items: center;
 		justify-content:center;
-		transition: all 0.5s ease;
+		transition: all 0.7s ease;
 		background: rgba(0,0,0,0);
 	}
+}
+
+.related-container {
+	// position: fixed;
+	display: flex;
+	flex-direction:column;
+}
+
+.sidebar-related-news-title {
+	font-size: 0.85rem;
 }

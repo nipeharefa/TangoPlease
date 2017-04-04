@@ -9,10 +9,9 @@ export default class CardMediaContent extends Component {
 
       <div className="content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-        <a>#css</a> <a>#responsive</a>
+        Phasellus nec iaculis mauris...<span className="more-span">more</span>
         <br />
-        <small>11:09 PM - 1 Jan 2016</small>
+        <small className="timestamp-post">46 Minutes Ago</small>
       </div>
 		)
 	}
