@@ -67,8 +67,9 @@ div.rowCard {
 			margin-right: 1rem;
 
 			@include touch() {
-				margin-right: 0;
+				margin-right: 0rem;
 			}
+			margin-right: 1rem;
 		}
 
 	}
