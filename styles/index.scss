@@ -4,3 +4,49 @@
 div.rowCard {
 	margin-bottom: 1rem;
 }
+
+.wrapping {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+	.nusa {
+		width: calc(100% / 2);
+
+		.card {
+			margin-bottom: 1rem;
+			margin-right: 1rem;
+		}
+
+	}
+}
+
+.apaini {
+	position: relative;
+}
+
+.apaini {
+	&:hover {
+		&:after {
+			background: rgba(0,0,0,0.5);
+		}
+
+		.containerButtonHover {
+			opacity: 1;
+			background: rgba(0,0,0,0.5);
+		}
+	}
+	.containerButtonHover {
+		position: absolute;
+		top:0;
+		left:0;
+		right: 0;
+		bottom:0;
+		display: flex;
+		opacity: 0;
+		align-items: center;
+		justify-content:center;
+		transition: all 0.5s ease;
+		background: rgba(0,0,0,0);
+	}
+}

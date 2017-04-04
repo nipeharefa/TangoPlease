@@ -18,7 +18,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "NODE_ENV=production && node index.js",
+    "start": "next build && next start",
     "now": "now"
   },
   "devDependencies": {

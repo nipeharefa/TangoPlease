@@ -7,7 +7,7 @@ export default class CardMediaUser extends Component {
 			<div className="media">
         <div className="media-left">
           <figure className="image is-48x48">
-            <img src="https://unsplash.it/48/48/?random" alt="Image" />
+            <img src="https://unsplash.it/48/48/?random" alt="Image"  />
           </figure>
         </div>
         

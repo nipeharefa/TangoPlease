@@ -15,7 +15,19 @@ export default () => (
 				<div className="container">
 					<div className="columns">
 						
-						<div className="column is-two-thirds">
+
+						<div className="column is-two-thirds is-hidden-touch">
+
+							<div className="columns is-half wrapping">
+
+								<Card />
+								<Card />
+								<Card />
+								<Card />
+
+							</div>
+						</div>
+						<div className="column is-two-thirds is-hidden-desktop">
 							
 							<div className="rowCard">
 								

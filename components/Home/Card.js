@@ -11,7 +11,7 @@ export default class Card extends Component {
     
     return (
 
-      <div>
+      <div className="nusa">
         <div className="card">
           
           <CardThumbnail />
