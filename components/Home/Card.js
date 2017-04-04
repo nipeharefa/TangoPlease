@@ -13,18 +13,11 @@ export default class Card extends Component {
 
       <div className="nusa">
         <div className="card">
-          
           <CardThumbnail />
-
           <div className="card-content">
-              
-              <CardMediaUser />
-
               <CardMediaContent />
           </div>
-
         </div>
-        
       </div>
 
     )

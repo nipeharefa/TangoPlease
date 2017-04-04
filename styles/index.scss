@@ -1,6 +1,43 @@
 @import 'bulma/bulma';
 
 
+// Headers
+.header-section {
+	padding-top:1rem;
+}
+
+.container-navbar {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	ul.navbar-category {
+		display: flex;
+		flex-direction:row;
+		li {
+			padding: 1rem 2rem 1.8rem 0;
+		}
+	}
+}
+.navbar-right-style2 {
+	align-items: center;
+	.nav-right-oke {
+		display: flex;
+		flex-direction: row;
+		
+		li {
+			padding-left: 2rem;
+			a {
+				font-size: 0.8rem;
+			}
+			img {
+				border-radius: 50%;
+
+			}
+		}
+	}
+}
+// End headers
+
 div.rowCard {
 	margin-bottom: 1rem;
 }
@@ -11,7 +48,7 @@ div.rowCard {
 	flex-direction: row;
 
 	.nusa {
-		
+				
 		@include touch() {
 			width: calc(100% / 1) !important;
 		};
@@ -28,6 +65,10 @@ div.rowCard {
 		.card {
 			margin-bottom: 1rem;
 			margin-right: 1rem;
+
+			@include touch() {
+				margin-right: 0;
+			}
 		}
 
 	}
@@ -53,7 +94,7 @@ div.rowCard {
 
 		.containerButtonHover {
 			opacity: 1;
-			background: rgba(0,0,0,0.5);
+			background: rgba(0,0,0,0.7);
 		}
 	}
 	.containerButtonHover {
