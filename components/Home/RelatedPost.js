@@ -17,6 +17,7 @@ export default class SideBarRelatedPost extends Component {
   						<p className="sidebar-related-news-title">
   							Bulm bula bulma
   						</p>
+              <small>01 April 2017</small>
   					</div>
   				</div>
 			</div>
